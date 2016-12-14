@@ -7,6 +7,7 @@ Find here a C++ program that I wrote based on the information in your posting.
 
 For matrix/array problems of this type, I recommend using Boost multi_array:
 http://www.boost.org/doc/libs/1_62_0/libs/multi_array/doc/
+
 http://www.boost.org/doc/libs/1_62_0/libs/multi_array/doc/user.html
 
 On Mac/Linux/UNIX compile with:
