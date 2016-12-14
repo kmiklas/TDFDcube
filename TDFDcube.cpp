@@ -1,4 +1,4 @@
-// Evolve v0.1 for Jerry W
+// TDFDcube v0.1 for Jerry W
 // 14 Dec 2016 - v0.0.1
 // 
 // For matrix/array problems of this type, I recommend using Boost multi_array:
