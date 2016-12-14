@@ -40,21 +40,21 @@ int main() {
 	std::cout << std::endl;
 	}
 
-	std::cout << "Simple performance test. Assign prism values 1,000,000 times, and clock it." << std::endl;
-	std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
-	for (long int a = 0; a < 1000000; ++a) {
-		values = 0;
-		for(index i = 0; i != 3; ++i) 
-			for(index j = 0; j != 5; ++j)
-				for(index k = 0; k != 4; ++k)
-					Bx[i][j][k] = values++;
-	}
-	std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
-	std::cout << "It took " << time_span.count() << " seconds." << std::endl;
+    std::cout << "Simple performance test. Assign prism values 1,000,000 times, and clock it." << std::endl;
+    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+    for (long int a = 0; a < 1000000; ++a) {
+	    values = 0;
+	    for(index i = 0; i != 3; ++i) 
+		for(index j = 0; j != 5; ++j)
+		    for(index k = 0; k != 4; ++k)
+			Bx[i][j][k] = values++;
+    }
+    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
+    std::cout << "It took " << time_span.count() << " seconds." << std::endl;
 
-	std::cout << "\n";
-	return 0;
+    std::cout << "\n";
+    return 0;
 }
 
 
